@@ -2,9 +2,9 @@
   <section class="container">
     <div>
       <div v-for="(item,index) in list" :key="index" class="list-box">
-        <nuxt-link :to="`/details/${item.articleId}`">
+        <nuxt-link :to="`/articles/${item.articleId}`">
           <div>{{item.articleId}}</div>
-          <div>{{item.content}}}</div>
+          <div>{{item.content}}</div>
           <div>{{item.describe}}</div>
           <div v-if="item.image&&item.image.length">
             <img :src="item.image[0].url" alt="">
